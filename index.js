@@ -28,9 +28,9 @@ app.use(express.static(process.env.DB_PUBLIC))
 // initializing the route for server
 app.use('/api',Router);
 
-const PORT= process.env.PORT || 8080
 
-app.listen(PORT, () => {
+
+app.listen(process.env.PORT, () => {
     console.log("server started")
 })
 
